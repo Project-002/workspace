@@ -1,0 +1,45 @@
+{
+	"folders": [
+		{
+			"path": "gateway"
+		},
+		{
+			"path": "worker"
+		},
+		{
+			"path": "strelitzia"
+		},
+		{
+			"path": "voice"
+		},
+		{
+			"path": "delphinium"
+		},
+		{
+			"path": "docs"
+		},
+		{
+			"path": "docgen"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [],
+		"compounds": [
+			{
+				"name": "Launch Gateway and Worker",
+				"configurations": [
+					"Launch Gateway",
+					"Launch Worker"
+				]
+			},
+			{
+				"name": "Test Delphinium and Strelitiza",
+				"configurations": [
+					"Test Delphinium",
+					"Test Strelitzia"
+				]
+			}
+		]
+	}
+}
