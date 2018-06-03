@@ -1,0 +1,28 @@
+version: '3'
+services:
+  worker:
+    build:
+      context: ./worker
+    restart: always
+    env_file:
+      - ./worker/.env
+
+  gateway:
+    build:
+      context: ./gateway
+    restart: always
+    env_file:
+      - ./gateway/.env
+
+  lavalink:
+    build:
+      context: ./voice
+    restart: always
+
+  rabbitmq:
+    image: "rabbitmq:3-alpine"
+    restart: always
+
+  redis:
+    image: "redis:4-alpine"
+    restart: always
